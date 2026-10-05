@@ -1,7 +1,7 @@
 # SEN Production Launch Checklist
 
 ## Required external services
-1. Production HTTPS domain (set `PUBLIC_APP_URL` on Render)
+1. Production HTTPS domain
 2. Managed PostgreSQL (or equivalent)
 3. S3-compatible object storage + CDN for videos
 4. TURN server for reliable WebRTC calls
@@ -24,7 +24,6 @@
 - Consider automated scanning before public scale.
 
 ## Release
-- Set the GitHub Actions repository variable `SEN_API_URL` to the Render HTTPS service URL.
-- Build Android AAB with Capacitor/Android Studio; the app bundles its UI locally and uses `SEN_API_URL` for backend traffic.
+- Build Android AAB with Capacitor/Android Studio.
 - Test on multiple Android versions and networks.
 - Configure Play Console app signing.
